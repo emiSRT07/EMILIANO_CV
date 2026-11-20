@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Currículum vitae de Emiliano Ramirez" />
+  <title>Emiliano Ramirez | Currículum Vitae</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Barra de navegación -->
+  <nav class="navbar" id="navbar">
+    <a href="#inicio" class="nav-logo">ER<span>.</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+      <li><a href="#experiencia" class="nav-link">Experiencia</a></li>
+      <li><a href="#educacion" class="nav-link">Educación</a></li>
+      <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+      <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+      <li><a href="#contacto" class="nav-link">Contacto</a></li>
+      <li>
+        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+          <span class="theme-icon">◐</span>
+        </button>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Encabezado / Hero -->
+  <header class="hero" id="inicio">
+    <div class="hero-background"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting">Hola, mi nombre es</p>
+        <h1 class="hero-name">Emiliano <span>Ramirez</span></h1>
+        <h2 class="hero-title" id="typedTitle">Desarrollador Web</h2>
+        <p class="hero-description">
+          Apasionado por crear experiencias digitales funcionales, accesibles y con
+          una estética cuidada al detalle. Siempre en busca de nuevos retos.
+        </p>
+        <div class="hero-actions">
+          <a href="#contacto" class="btn btn-primary">Contáctame</a>
+          <button class="btn btn-outline" id="printBtn">
+            <span>⬇</span> Descargar CV
+          </button>
+        </div>
+        <div class="social-links">
+          <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+          <a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter">Twitter</a>
+          <a href="mailto:emiliano.ramirez@email.com" aria-label="Correo">Email</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="avatar-ring">
+          <div class="avatar">ER</div>
+        </div>
+        <div class="hero-badge">
+          <span class="badge-dot"></span> Disponible para trabajar
+        </div>
+      </div>
+    </div>
+    <a href="#sobre-mi" class="scroll-indicator" aria-label="Desplazarse">
+      <span></span>
+    </a>
+  </header>
+
+  <main>
+    <!-- Sobre mí -->
+    <section class="section" id="sobre-mi">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">01.</span>
+          <h2 class="section-title">Sobre mí</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              Soy un profesional creativo y responsable con experiencia en el
+              desarrollo de sitios web y aplicaciones. Me especializo en transformar
+              ideas en soluciones reales, combinando código limpio con diseño
+              intuitivo.
+            </p>
+            <p>
+              Disfruto trabajar en equipo, aprender tecnologías nuevas y aportar
+              ideas que generen valor. Mi objetivo es seguir creciendo como
+              desarrollador y entregar siempre resultados de calidad.
+            </p>
+            <div class="stats">
+              <div class="stat"><strong data-count="5">0</strong><span>Años de experiencia</span></div>
+              <div class="stat"><strong data-count="30">0</strong><span>Proyectos completados</span></div>
+              <div class="stat"><strong data-count="12">0</strong><span>Tecnologías dominadas</span></div>
+            </div>
+          </div>
+          <div class="about-info reveal">
+            <div class="info-row"><span class="info-label">Nombre:</span><span>Emiliano Ramirez</span></div>
+            <div class="info-row"><span class="info-label">Ubicación:</span><span>Ciudad de México, MX</span></div>
+            <div class="info-row"><span class="info-label">Teléfono:</span><span>+52 55 1234 5678</span></div>
+            <div class="info-row"><span class="info-label">Correo:</span><span>emiliano.ramirez@email.com</span></div>
+            <div class="info-row"><span class="info-label">Sitio web:</span><span>www.emiliano-ramirez.dev</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experiencia -->
+    <section class="section section-alt" id="experiencia">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">02.</span>
+          <h2 class="section-title">Experiencia</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <span class="timeline-dot"></span>
+            <span class="timeline-date">2022 — Presente</span>
+            <h3>Desarrollador Web Senior</h3>
+            <p class="timeline-company">Empresa Innovadora S.A. de C.V.</p>
+            <p class="timeline-description">
+              Lidero el desarrollo de aplicaciones web corporativas, optimizo
+              procesos internos y mentorizo al equipo junior. Implementé mejoras
+              que redujeron los tiempos de carga en un 40%.
+            </p>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="timeline-dot"></span>
+            <span class="timeline-date">2020 — 2022</span>
+            <h3>Desarrollador Frontend</h3>
+            <p class="timeline-company">Studio Digital</p>
+            <p class="timeline-description">
+              Diseñé y construí interfaces responsivas para más de 15 clientes,
+              garantizando accesibilidad, rendimiento y una experiencia de usuario
+              consistente en todos los dispositivos.
+            </p>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="timeline-dot"></span>
+            <span class="timeline-date">2019 — 2020</span>
+            <h3>Practicante de Desarrollo</h3>
+            <p class="timeline-company">Tech Solutions</p>
+            <p class="timeline-description">
+              Apoyé en el mantenimiento de sistemas internos, corrección de errores
+              y automatización de tareas repetitivas usando JavaScript y Python.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Educación -->
+    <section class="section" id="educacion">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">03.</span>
+          <h2 class="section-title">Educación</h2>
+        </div>
+        <div class="education-grid">
+          <article class="education-card reveal">
+            <div class="edu-icon">🎓</div>
+            <span class="edu-date">2015 — 2019</span>
+            <h3>Ingeniería en Sistemas Computacionales</h3>
+            <p class="edu-school">Instituto Tecnológico de México</p>
+            <p class="edu-description">
+              Especialización en desarrollo de software, bases de datos y redes.
+              Tesis: "Diseño de una plataforma web para gestión académica".
+            </p>
+          </article>
+          <article class="education-card reveal">
+            <div class="edu-icon">📜</div>
+            <span class="edu-date">2021</span>
+            <h3>Certificación en Desarrollo Web Full Stack</h3>
+            <p class="edu-school">Plataforma de Aprendizaje Online</p>
+            <p class="edu-description">
+              Formación intensiva en HTML, CSS, JavaScript, Node.js, React y
+              bases de datos relacionales y NoSQL.
+            </p>
+          </article>
+          <article class="education-card reveal">
+            <div class="edu-icon">🌐</div>
+            <span class="edu-date">2023</span>
+            <h3>Diplomado en UX/UI Design</h3>
+            <p class="edu-school">Centro de Diseño Digital</p>
+            <p class="edu-description">
+              Investigación de usuarios, wireframing, prototipado y diseño de
+              interfaces centradas en la accesibilidad.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section class="section section-alt" id="habilidades">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">04.</span>
+          <h2 class="section-title">Habilidades</h2>
+        </div>
+        <div class="skills-layout">
+          <div class="skills-technical reveal">
+            <h3 class="subsection-title">Habilidades técnicas</h3>
+            <div class="skill">
+              <div class="skill-info"><span>HTML &amp; CSS</span><span>95%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-level="95"></div></div>
+            </div>
+            <div class="skill">
+              <div class="skill-info"><span>JavaScript</span><span>90%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-level="90"></div></div>
+            </div>
+            <div class="skill">
+              <div class="skill-info"><span>React</span><span>85%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-level="85"></div></div>
+            </div>
+            <div class="skill">
+              <div class="skill-info"><span>Node.js</span><span>80%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-level="80"></div></div>
+            </div>
+            <div class="skill">
+              <div class="skill-info"><span>Bases de datos</span><span>75%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-level="75"></div></div>
+            </div>
+            <div class="skill">
+              <div class="skill-info"><span>Git &amp; GitHub</span><span>88%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-level="88"></div></div>
+            </div>
+          </div>
+          <div class="skills-extra reveal">
+            <h3 class="subsection-title">Habilidades blandas</h3>
+            <div class="tags">
+              <span class="tag">Trabajo en equipo</span>
+              <span class="tag">Comunicación</span>
+              <span class="tag">Resolución de problemas</span>
+              <span class="tag">Creatividad</span>
+              <span class="tag">Adaptabilidad</span>
+              <span class="tag">Gestión del tiempo</span>
+            </div>
+            <h3 class="subsection-title">Idiomas</h3>
+            <div class="language"><span>Español</span><span>Nativo</span></div>
+            <div class="language"><span>Inglés</span><span>Avanzado (C1)</span></div>
+            <div class="language"><span>Portugués</span><span>Intermedio (B1)</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section class="section" id="proyectos">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">05.</span>
+          <h2 class="section-title">Proyectos destacados</h2>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-image project-1"><span>01</span></div>
+            <div class="project-body">
+              <h3>Tienda en Línea</h3>
+              <p>E-commerce responsivo con carrito de compras, filtros y pasarela de pago simulada.</p>
+              <div class="project-tech"><span>HTML</span><span>CSS</span><span>JS</span></div>
+              <a href="#" class="project-link">Ver proyecto →</a>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-image project-2"><span>02</span></div>
+            <div class="project-body">
+              <h3>Dashboard Analítico</h3>
+              <p>Panel de visualización de datos con gráficas dinámicas y filtros en tiempo real.</p>
+              <div class="project-tech"><span>React</span><span>Chart.js</span><span>API</span></div>
+              <a href="#" class="project-link">Ver proyecto →</a>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-image project-3"><span>03</span></div>
+            <div class="project-body">
+              <h3>App de Tareas</h3>
+              <p>Gestor de tareas con persistencia local, categorías y recordatorios.</p>
+              <div class="project-tech"><span>JS</span><span>LocalStorage</span><span>CSS</span></div>
+              <a href="#" class="project-link">Ver proyecto →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="section contact" id="contacto">
+      <div class="container contact-container">
+        <div class="contact-intro reveal">
+          <span class="section-number">06.</span>
+          <h2 class="section-title">Hablemos</h2>
+          <p>
+            ¿Tienes un proyecto en mente o quieres conversar? No dudes en
+            contactarme. Estoy disponible para nuevas oportunidades.
+          </p>
+          <div class="contact-details">
+            <div class="contact-item"><span>✉</span><span>emiliano.ramirez@email.com</span></div>
+            <div class="contact-item"><span>☎</span><span>+52 55 1234 5678</span></div>
+            <div class="contact-item"><span>⌖</span><span>Ciudad de México, México</span></div>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Tu nombre" required />
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Tu correo" required />
+          </div>
+          <div class="form-group">
+            <textarea id="message" rows="5" placeholder="Tu mensaje" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+          <p class="form-status" id="formStatus" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Emiliano Ramirez. Todos los derechos reservados.</p>
+    <a href="#inicio" class="back-to-top">Volver arriba ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
