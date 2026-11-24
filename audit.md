@@ -27,3 +27,4 @@
 - **Por qué:** Gris claro sobre blanco no llega a 4.5:1.
 - **Cómo la corregí:** Usé un gris más oscuro; el selector marca 6.7.
 
+## Lo que encontró opencode
