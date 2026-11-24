@@ -1,0 +1,3 @@
+/* Puente: el HTML carga este archivo en la raíz.
+   El diseño real vive en css/styles.css para no duplicarlo. */
+@import url("css/styles.css");

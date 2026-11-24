@@ -10,18 +10,18 @@ document.addEventListener("DOMContentLoaded", () => {
   const themeToggle = document.getElementById("themeToggle");
   const savedTheme = localStorage.getItem("cv-theme");
 
-  if (savedTheme === "light") {
-    document.documentElement.setAttribute("data-theme", "light");
+  if (savedTheme === "dark") {
+    document.documentElement.setAttribute("data-theme", "dark");
   }
 
   themeToggle.addEventListener("click", () => {
-    const isLight = document.documentElement.getAttribute("data-theme") === "light";
-    if (isLight) {
+    const isDark = document.documentElement.getAttribute("data-theme") === "dark";
+    if (isDark) {
       document.documentElement.removeAttribute("data-theme");
-      localStorage.setItem("cv-theme", "dark");
-    } else {
-      document.documentElement.setAttribute("data-theme", "light");
       localStorage.setItem("cv-theme", "light");
+    } else {
+      document.documentElement.setAttribute("data-theme", "dark");
+      localStorage.setItem("cv-theme", "dark");
     }
   });
 
