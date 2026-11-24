@@ -1,3 +1,4 @@
+# Sesión 11 · css/generated.css
 ## Falla 1
 - **Principio:** Color
 - **Línea:** css/shop.css, línea 12
